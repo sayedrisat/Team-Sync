@@ -12,6 +12,16 @@ dist
 dist-ssr
 *.local
 
+# Environment variables and local credentials
+.env
+.env.*
+!.env.example
+.npmrc
+
+# Test and tooling output
+coverage
+.vite
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

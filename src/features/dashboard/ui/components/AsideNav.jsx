@@ -1,7 +1,6 @@
 import React from "react";
 
 import NavigationTab from "./NavigationTab";
-import { MessageCircle } from "lucide-react";
 import { useSelector } from "react-redux";
 import {
   adminNavigation,
@@ -27,8 +26,9 @@ const AsideNav = () => {
         {navigations.map((route) => {
           return (
             <NavigationTab
+              key={route.path}
               path={route.path}
-              Icon={route.icon}
+              icon={route.icon}
               title={route.title}
             />
           );

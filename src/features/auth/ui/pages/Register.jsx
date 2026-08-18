@@ -1,5 +1,4 @@
 import React from "react";
-import { useForm } from "react-hook-form";
 import { User, Mail, Lock, Sparkles, ShieldCheck } from "lucide-react";
 import { useAuth } from "../../hooks/useAuth";
 

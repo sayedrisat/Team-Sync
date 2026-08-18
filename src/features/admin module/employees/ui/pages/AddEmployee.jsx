@@ -64,7 +64,7 @@ const AddEmployee = () => {
           />
 
           {/* EMPLOYMENT DETAILS */}
-          <EmploymentDetailsForm register={register} errors={errors} />
+          <EmploymentDetailsForm register={register} />
 
           {/* ACTIONS */}
           <FormActions />

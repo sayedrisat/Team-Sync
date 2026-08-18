@@ -1,8 +1,7 @@
-import { ChartArea } from "lucide-react";
 import React from "react";
 import { NavLink } from "react-router";
 
-const NavigationTab = ({ path, title, Icon }) => {
+const NavigationTab = ({ path, title, icon }) => {
   return (
     <NavLink
       className={({ isActive }) =>
@@ -15,7 +14,7 @@ const NavigationTab = ({ path, title, Icon }) => {
       to={path}
       end="/"
     >
-      <ChartArea size={23} />
+      {icon}
       {title}
     </NavLink>
   );
